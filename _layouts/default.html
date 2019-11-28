@@ -1,16 +1,33 @@
+<!DOCTYPE html>
 <html>
-  <tile>
-    {{ page.title }}
+
+<head>
+   
+    <title>
+        V17 {{ page.title }}
     </title>
-<body>
-<h1> Student Identified {{ page.stuname }}  </h1>
-<table>
-<tr>
-<td> Student Name </td> <td> {{ page.stuname }} </td>
-</tr>
-</table>
+</head>
+<h1> Student Identification System </h1>
 <div>
-{{ content }}
+    <table>
+        <tr>
+            <td>FirstName</td>
+            <td>{{ page.FirstName }}</td>
+            <td rowspan="4">
+                <img src="/images/{{ page.img }}">
+            </td>
+        </tr>
+        <tr>
+            <td>LastName </td>
+            <td>{{ page.LastName }}</td>
+        </tr>
+
+        <tr>
+            <td>Grade</td>
+            <td>{{ page.Grade }} </td>
+        </tr>
+    </table>
+
 </div>
-</body>
+
 </html>
