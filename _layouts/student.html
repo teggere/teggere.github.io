@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <style>
+      
+td{
+    border:black thin solid;
+    max-width:50%;
+    width:20%;
+}
+   </style>
+    <title>
+        V20 {{ page.title }}
+    </title>
+</head>
+<h1> Student Identification System </h1>
+<div>
+    <table>
+        <tr>
+        <td colspan="2" align="center">
+                <img src="/pictures/{{ page.picture }}">
+            </td>
+        </tr>
+        <tr>
+            <td>FirstName</td>
+            <td>{{ page.firstname }}</td>
+        </tr>
+        <tr>
+            <td>LastName </td>
+            <td>{{ page.lastname }}</td>
+        </tr>
+
+        <tr>
+            <td>Grade</td>
+            <td>{{ page.grade }} </td>
+        </tr>
+    </table>
+
+</div>
+
+</html>
